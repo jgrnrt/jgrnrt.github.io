@@ -1,0 +1,151 @@
+<html lang="en">
+
+<head>
+  <!-- Required meta tags / Let browser know website is optimized for mobile-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jere's Photography</title>
+  <!-- resources -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <script type="module" crossorigin src="/assets/main.fbeab92e.js"></script>
+  <link rel="modulepreload" href="/assets/hamburger.0f3e8984.js">
+  <link rel="stylesheet" href="/assets/hamburger.51cdb56d.css">
+</head>
+
+
+<!--hero landing page-->
+
+<body>
+  <!--Navbar-->
+  <nav id="nav" class="navbar bg-brand-dark">
+    <div class="max-w-sm md:max-w-xl  lg:max-w-4xl xl:max-w-6xl mx-auto text-brand-mid">
+      <div class="flex justify-between h-14">
+        <!--logo-->
+        <div class="z-10 flex items-center">
+          <a href="/" class="flex space-x-2 hover:text-brand-light  transition ease-in duration-150">
+            <svg class="h-6 w-6 text-color accentcolor" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" stroke-Width="2"
+                d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+              <path strokeLinecap="round" strokeLinejoin="round" stroke-Width="2"
+                d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span class="font-bold">Jere's Photography</span>
+          </a>
+        </div>
+        <!--primarynav-->
+        <div class="hidden md:flex items-center space-x-8">
+          <div class="flex  hover:text-brand-light transition ease-in duration-150"><a
+              href="../html/Portfolio.html">Portfolio</a>
+          </div>
+          <div class="flex  hover:text-brand-light transition ease-in duration-150"><a
+              href="../html/Portraits.html">Portraits</a></div>
+          <div class="flex hover:text-brand-light transition ease-in duration-150"><a
+              href="../html/Pricing.html">Pricing</a></div>
+          <div class="flex hover:text-brand-light transition ease-in duration-150">
+            <a href="../html/Contact.html">Contact</a>
+          </div>
+        </div>
+        <!-- mobile hamburger button-->
+        <div onclick="toggleBurger()" class="flex items-center md:hidden">
+          <div id="hamburger" class="burger burger-arrow burger-up" style="font-size:8px">
+            <div class="burger-lines"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Menu Fullscreen Overlay  -->
+  <div id="overlayNav" style="height:0vh" class="overlay md:hidden">
+
+    <div class="overlay-content ">
+      <div
+        class="block py-4 px-4 text-2xl font-bold  text-brand-mid hover:text-brand-light  transition ease-in duration-150">
+        <a href="../html/Portfolio.html">Portfolio</a>
+      </div>
+      <div
+        class="block py-4 px-4 text-2xl font-bold   text-brand-mid hover:text-brand-light  transition ease-in duration-150">
+        <a href="../html/Portraits.html">Portraits</a>
+      </div>
+      <div
+        class="block py-4 px-4 text-2xl font-bold   text-brand-mid hover:text-brand-light  transition ease-in duration-150">
+        <a href="../html/Pricing.html">Pricing</a>
+      </div>
+      <div
+        class="block py-4 px-4 text-2xl font-bold text-brand-mid hover:text-brand-light transition ease-in duration-150">
+        <a href="../html/Contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--Main Section / Hero Content -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold">
+        Jere's Photography
+      </h1>
+      <a href="html/Portfolio.html">
+        <button
+          class="text-sm md:text-lg transition duration-150 transform hover:scale-125 ease-in-out bg-brand-dark hover:bg-brand-accent2 hover:text-brand-dark text-brand-light font-semibold py-5 px-10 rounded inline-flex items-center mt-14 space-x-10">
+          <span>Hot Singles in my Portfolio</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 animate-pulse" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </button>
+      </a>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <div class="footer fixed">
+    <!--Waves-->
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(51,51,51,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(51,51,51,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(51,51,51,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#333333" />
+      </g>
+    </svg>
+    <!--Footer Text-->
+    <footer id="footerbar" class="bg-brand-dark">
+      <div class="sm:max-w-lg md:max-w-xl  lg:max-w-4xl xl:max-w-6xl mx-auto text-brand-mid">
+        <div class="block md:flex items-center py-3" style="font-size: 0.5rem;">
+          <div class="text-center text-base flex-1 space-x-2 md:text-left">
+            <a href="#"><i
+                class="align-middle fab fa-facebook-square hover:text-brand-light  transition ease-in duration-150"></i></a>
+            <a href="#" target="_blank"><i
+                class="align-middle  fab fa-instagram hover:text-brand-light transition ease-in duration-150"></i></a>
+            <a href="#"><i
+                class="fab fa-pinterest-square align-middle hover:text-brand-light transition ease-in duration-150"></i></a>
+          </div>
+          <div class="py-2 md:py-0 flex-1 text-center text-xs">
+            <a class="hover:text-brand-light hover:underline pr-1 border-r border-brand-almostdark transition ease-in duration-150"
+              href="#">Datenschutz</a><a
+              class="hover:text-brand-light hover:underline pr-1 border-r border-brand-almostdark pl-1 transition ease-in duration-150"
+              href="#">Impressum</a><a
+              class="hover:text-brand-light hover:underline pl-1 transition ease-in duration-150" href="#">Cookies</a>
+          </div>
+          <div class="text-center flex-1 md:text-right text-xs">
+            <p>© 2021 Jere's Photography.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!--Hamburger Menu-->
+  <script src="./js/menu.js"></script>
+</body>
+
+</html>
