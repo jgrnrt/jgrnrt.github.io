@@ -1,0 +1,198 @@
+<html lang="en">
+
+<head>
+  <!-- Required meta tags / Let browser know website is optimized for mobile-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jere's Portfolio</title>
+  <!--Tailwind CSS-->
+  
+
+  <!-- Font Awesome Icons-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <script type="module" crossorigin src="/assets/html2.3ae011c8.js"></script>
+    <link rel="modulepreload" href="/assets/tailwind.0443b739.js">
+    <link rel="stylesheet" href="/assets/tailwind.4a6c1c3c.css">
+  </head>
+
+
+
+
+<body>
+  <!--Navbar-->
+  <nav id="nav" class="navbar bg-brand-dark">
+    <div class="max-w-xs sd:max-w-sm  md:max-w-xl  lg:max-w-4xl xl:max-w-6xl mx-auto text-brand-mid">
+      <div class="flex justify-between h-14">
+        <!--logo-->
+        <div class="z-10 flex items-center">
+          <a href="/" class="flex space-x-2 hover:text-brand-light  transition ease-in duration-150">
+            <svg class="h-6 w-6 text-color accentcolor" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" stroke-Width="2"
+                d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+              <path strokeLinecap="round" strokeLinejoin="round" stroke-Width="2"
+                d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span class="font-bold">Jere's Photography</span>
+          </a>
+        </div>
+        <!--primarynav-->
+        <div class="hidden md:flex items-center space-x-8">
+          <div class="flex text-brand-almostdark hover:text-brand-light transition ease-in duration-150"><a
+              href="../html/Portfolio.html">Portfolio</a>
+          </div>
+          <div class="flex hover:text-brand-light transition ease-in duration-150"><a
+              href="../html/Portraits.html">Portraits</a></div>
+          <div class="flex hover:text-brand-light transition ease-in duration-150"><a
+              href="../html/Pricing.html">Pricing</a></div>
+          <div class="flex hover:text-brand-light transition ease-in duration-150"><a
+              href="../html/Contact.html">Contact</a></div>
+        </div>
+        <!-- mobile hamburger button-->
+        <div onclick="toggleBurger()" class="flex items-center md:hidden">
+          <div id="hamburger" class="burger burger-arrow burger-up" style="font-size:8px">
+            <div class="burger-lines"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Menu Fullscreen Overlay  -->
+  <div id="overlayNav" style="height:0vh" class="overlay md:hidden">
+
+    <div class="overlay-content ">
+      <div
+        class="block py-4 px-4 text-2xl font-bold text-brand-almostdark hover:text-brand-light  transition ease-in duration-150">
+        <a href="../html/Portfolio.html">Portfolio</a>
+      </div>
+      <div
+        class="block py-4 px-4 text-2xl font-bold text-brand-mid hover:text-brand-light  transition ease-in duration-150">
+        <a href="../html/Portraits.html">Portraits</a>
+      </div>
+      <div
+        class="block py-4 px-4 text-2xl font-bold text-brand-mid hover:text-brand-light  transition ease-in duration-150">
+        <a href="../html/Pricing.html">Pricing</a>
+      </div>
+      <div
+        class="block py-4 px-4 text-2xl font-bold text-brand-mid hover:text-brand-light transition ease-in duration-150">
+        <a href="../html/Contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="main mt-10 md:mt-14">
+    <div class="bg-brand-light">
+
+    </div>
+    <p class="text-brand-dark text-4xl md:text-5xl lg:text-6xl font-bold text-center my-10 md:my-14 ">Portfolio</p>
+    <div class="bg-brand-almostdark py-14">
+
+
+      <div class=" container flex flex-wrap mx-auto">
+        <!--Masonry Portfolio Portraits-->
+        <div class=" masonry-mobile md:mx-6 md:masonry-mid lg:masonry before:box-inherit after:box-inherit mx-4">
+          <div class="break-inside">
+            <img class="rounded cursor-pointer" src="/assets/land2.036a7f5d.jpg"
+              onclick="window.open('../img/land2.jpg', '_blank');">
+          </div>
+          <div class="break-inside pt-7 ">
+            <img class="rounded cursor-pointer lazyload" data-src="../img/land8.jpg"
+              onclick="window.open('../img/land8.jpg', '_blank');">
+          </div>
+          <div class="break-inside pt-7">
+            <img class="rounded cursor-pointer lazyload" data-src="../img/still5.jpg"
+              onclick="window.open('../img/still5.jpg', '_blank');">
+          </div>
+          <div class="break-inside pt-7">
+            <img class="rounded cursor-pointer lazyload" data-src="../img/land3.jpg"
+              onclick="window.open('../img/land3.jpg', '_blank');">
+          </div>
+          <div class="break-inside pt-7 lg:pt-0 ">
+            <img class="rounded cursor-pointer lazyload" data-src="../img/land4.jpg"
+              onclick="window.open('../img/land4.jpg', '_blank');">
+          </div>
+          <div class="break-inside pt-7">
+            <img class="rounded cursor-pointer lazyload" data-src="../img/still3.jpg"
+              onclick="window.open('../img/still3.jpg', '_blank');">
+          </div>
+          <div class="break-inside pt-7 md:pt-0 lg:pt-7">
+            <img class="rounded cursor-pointer lazyload" data-src="../img/land5.jpg"
+              onclick="window.open('../img/land5.jpg', '_blank');">
+          </div>
+          <div class="break-inside pt-7">
+            <img class="rounded cursor-pointer lazyload" data-src="../img/still2.jpg"
+              onclick="window.open('../img/still2.jpg', '_blank');">
+          </div>
+          <div class="break-inside">
+            <img class="rounded cursor-pointer pt-7 lg:pt-0 lazyload" data-src="../img/land1.jpg"
+              onclick="window.open('../img/land1.jpg', '_blank');">
+          </div>
+          <div class="break-inside pt-7">
+            <img class="rounded cursor-pointer lazyload" data-src="../img/land7.jpg"
+              onclick="window.open('../img/land7.jpg', '_blank');">
+          </div>
+          <div class="break-inside pt-7 ">
+            <img class="rounded cursor-pointer lazyload" data-src="../img/still1.jpg"
+              onclick="window.open('../img/still1.jpg', '_blank');">
+          </div>
+          <div class="break-inside pt-7 ">
+            <img class="rounded cursor-pointer lazyload" data-src="../img/land6.jpg"
+              onclick="window.open('../img/land6.jpg', '_blank');">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--CTA-->
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+          <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900">Hungry for more? There are some
+            Portraits you haven't seen yet.</h1>
+          <a href="../html/Portraits.html">
+            <button
+              class="flex-shrink-0 transition duration-150 transform ease-in-out bg-brand-dark hover:bg-brand-accent2 hover:text-brand-dark text-brand-light border-0 py-2 px-8 focus:outline-none  rounded text-lg mt-10 sm:mt-0">Check
+              them out</button>
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!--Footer-->
+  <footer class="bg-brand-dark">
+    <div class="sm:max-w-lg md:max-w-xl  lg:max-w-4xl xl:max-w-6xl mx-auto text-brand-mid">
+      <div class="block md:flex items-center py-3" style="font-size: 0.5rem;">
+        <div class="text-center text-base flex-1 space-x-2 md:text-left">
+          <a href="#"><i
+              class="align-middle fab fa-facebook-square hover:text-brand-light  transition ease-in duration-150"></i></a>
+          <a href="https://www.instagram.com/jeresdump/" target="_blank"><i
+              class="align-middle  fab fa-instagram hover:text-brand-light transition ease-in duration-150"></i></a>
+          <a href="#"><i
+              class="fab fa-pinterest-square align-middle hover:text-brand-light transition ease-in duration-150"></i></a>
+        </div>
+        <div class="py-2 md:py-0 flex-1 text-center text-xs">
+          <a class="hover:text-brand-light hover:underline pr-1 border-r border-brand-almostdark transition ease-in duration-150"
+            href="#">Datenschutz</a><a
+            class="hover:text-brand-light hover:underline pr-1 border-r border-brand-almostdark pl-1 transition ease-in duration-150"
+            href="#">Impressum</a><a class="hover:text-brand-light hover:underline pl-1 transition ease-in duration-150"
+            href="#">Cookies</a>
+        </div>
+        <div class="text-center flex-1 md:text-right text-xs">
+          <p>© 2021 Jere's Photography.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Hamburger Menu-->
+  <script src="../js/menu.js"></script>
+  <!-- Lazy Loading-->
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+  <script>lazyload();</script>
+</body>
+
+</html>
